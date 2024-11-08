@@ -1,4 +1,4 @@
-import {Text, StyleSheet, View, Image, Dimensions, TouchableOpacity} from 'react-native';
+import {Text, StyleSheet, View, Image, Dimensions, TouchableOpacity, ScrollView} from 'react-native';
 import React, {useState, useEffect} from 'react';
 import {useTheme} from '../theme/ThemeContext';
 import LinearGradient from 'react-native-linear-gradient';
@@ -30,7 +30,7 @@ const HomeHeader = () => {
       const data = await response.json();
       const topFiveImages = data.results
         .slice(0, 5)
-        .map((movie: any) => baseImagePath('w780', movie.backdrop_path));
+        .map((movie: any) => baseImagePath('original', movie.backdrop_path));
       setCategoryImages(topFiveImages);
       setCurrentImageIndex(0);
     } catch (error) {
@@ -51,10 +51,26 @@ const HomeHeader = () => {
 
   return (
     <View style={styles.container}>
-      <Image
-        source={{ uri: categoryImages[currentImageIndex] }}
-        style={styles.backgroundImage}
-      />
+      <ScrollView
+        horizontal
+        pagingEnabled={true}
+        showsHorizontalScrollIndicator={false}
+        onScroll={(event) => {
+          const x = event.nativeEvent.contentOffset.x;
+          const newIndex = Math.round(x / width);
+          setCurrentImageIndex(newIndex);
+        }}
+        scrollEventThrottle={16}
+      >
+        {categoryImages.map((imageUrl, index) => (
+          <Image
+            key={index}
+            source={{ uri: imageUrl }}
+            style={[styles.backgroundImage, { width }]}
+          />
+        ))}
+      </ScrollView>
+
       <LinearGradient
         colors={['transparent', theme.background]}
         style={styles.gradient}
