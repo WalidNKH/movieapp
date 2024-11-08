@@ -1,23 +1,34 @@
-import { Text, StyleSheet, View } from 'react-native'
-import React, { Component } from 'react'
-import { useTheme } from '../theme/ThemeContext'; // Assure-toi que le chemin est correct
+import { Text, StyleSheet, View, TouchableOpacity } from 'react-native'
+import React from 'react'
+import { useTheme } from '../theme/ThemeContext';
 
-  const CategoryHeader = (props: any) => {
-    const { theme, toggleTheme } = useTheme();
-    return (
-      <View>
-        <Text style={[styles.text, { color: theme.text}]}>{props.title}</Text>
-      </View>
-    )
-  }
-
+const CategoryHeader = (props: any) => {
+  const { theme } = useTheme();
+  return (
+    <View style={styles.container}>
+      <Text style={[styles.text, { color: theme.text}]}>{props.title}</Text>
+      <TouchableOpacity onPress={props.onPress}>
+        <Text style={[styles.seeMore, { color: theme.activeTab}]}>See more</Text>
+      </TouchableOpacity>
+    </View>
+  )
+}
 
 const styles = StyleSheet.create({
-    text:{
-        fontSize: 20,
-        fontWeight: 500,
+    container: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
         paddingHorizontal: 20,
-        paddingVertical:28
+        paddingVertical: 28
+    },
+    text: {
+        fontSize: 20,
+        fontWeight: '500',
+    },
+    seeMore: {
+        fontSize: 14,
+        fontWeight: '500',
     }
 });
 

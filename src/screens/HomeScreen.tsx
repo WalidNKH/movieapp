@@ -183,28 +183,22 @@ const HomeScreen = ({navigation}: any) => {
                         keyExtractor={(item:any) => item.id}
                         horizontal
                         contentContainerStyle={styles.list}
-                        renderItem={({item,index}) => {
-                            console.log('Movie data:', {
-                                title: item.original_title,
-                                vote_average: item.vote_average,
-                                vote_count: item.vote_count
-                            });
-                            return (
-                                <MovieCard 
-                                    shoudlMarginatedAtEnd={true}
-                                    cardFunction={() => {
-                                        navigation.push('MovieDetails', {movieid: item.id});
-                                    }}
-                                    cardWidth={width / 3}
-                                    isFirst={index == 0 ? true:false }
-                                    isLast={index == upcomingMoviesList?.length - 1 ? true : false }
-                                    title={item.original_title} 
-                                    imagePath={baseImagePath('w342', item.poster_path)}
-                                    vote_average={item.vote_average}
-                                    vote_count={item.vote_count}
-                                />
-                            );
-                        }}
+                        renderItem={({item,index}) => (
+                            <MovieCard 
+                            isSecondCarousel={true} 
+                            shoudlMarginatedAtEnd={true}
+                            cardFunction={() => {
+                                navigation.push('MovieDetails', {movieid: item.id});
+                            }}
+                            cardWidth={width / 3}
+                            isFirst={index == 0 ? true:false }
+                            isLast={index == upcomingMoviesList?.length - 1 ? true : false }
+                            title={item.original_title} 
+                            vote_average={item.vote_average}
+                            vote_count={item.vote_count} 
+                            imagePath={baseImagePath('w342', item.poster_path)}
+                            />
+                        )}
                     />
                     <Promotion/>
                 </View>
