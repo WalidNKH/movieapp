@@ -1,9 +1,40 @@
-Auto-évaluation :
+# Auto-évaluation du Projet Movie App
 
-Je pense mértiter une note de 15/20
+## Note estimée : 15/20
 
-Par rapport à la maquette, je pense l'avoir bien respecté, j'ai uniquement eu un soucis avec les points de défilement qui se retrouve au dessus des boutons au lieu d'en dessous et l'index du bouton sur lequel je me trouve qui ne change pas lorsque je clique sur une autre catégorie, c'est que du détail mais je sais qu'avec un peu plus de temps, j'aurais facilement pu le régler.
+### Points Forts
 
-Aussi, je pense que j'ai du code en trop, avec beaucoup de style qui se répètent dans les composants, je sais que je peux les regrouper dans un seul composant mais je n'ai pas eu le temps pour optimiser le code.
+- Respect global de la maquette
+- Bonne intégration de l'API TMDB
+- Architecture claire et compréhensible
+- Adaptation rapide à React Native malgré une seule expérience il y a 5 ans
 
-l'architecture du code est assez simple et facile à comprendre, j'ai juste du ajouter des props pour certains composants qui n'en avait pas besoin mais qui m'ont semblés utiles.
+### Points d'Amélioration
+
+#### Interface Utilisateur
+
+- Les points de défilement se retrouvent malencontreusement au-dessus des boutons au lieu d'en dessous (un détail que j'aurais facilement pu corriger avec plus de temps)
+- L'index des catégories ne se met pas à jour lors du changement - encore un de ces petits détails frustrants !
+- J'ai commencé une barre de recherche que je compte finir pour mieux comprendre l'intégration au state
+
+#### Code et Architecture
+
+- Comme un débile, j'ai ajouté la police Gilroy à la fin, ce qui rend mon code un peu dégueu
+- Pas mal de styles qui se répètent dans les composants - je sais que je peux faire mieux en les regroupant
+- Quelques props peut-être pas indispensables, mais qui m'ont semblé utiles sur le moment
+
+#### Ressources
+
+- Dans le rush, j'ai téléchargé que 3 versions de Gilroy alors qu'il en fallait plus
+- Pour les films de sport, pas trouvé l'ID correct dans l'API, du coup j'ai mis un truc au pif (mais ça marche !)
+
+Malgré ces petits défauts, je suis plutôt satisfait du résultat. L'architecture est simple et facile à comprendre, même si certains aspects pourraient être optimisés.
+
+### Perspectives
+
+- Je vais finir cette barre de recherche, ça m'intrigue trop !
+- Nettoyer tout ce bazar de styles répétés
+- Installer toutes les variantes de Gilroy comme il faut
+- Régler ces petits détails UI qui me chatouillent
+
+Pour être honnête, j'ai redécouvert React Native avec ce projet et j'ai vraiment kiffé !
