@@ -118,7 +118,7 @@ const HomeHeader = () => {
           >
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
               <Icon name="add" size={16} color="#FFFFFF" style={{ marginRight: 5 }} />
-              <Text style={[styles.buttonText, { color: '#FFFFFF', fontWeight: 'semibold' }]}>Wishlist</Text>
+              <Text style={[styles.buttonText, { color: '#FFFFFF', fontFamily: 'Gilroy-Medium' }]}>Wishlist</Text>
             </View>
           </TouchableOpacity>
         </View>
@@ -157,6 +157,7 @@ const styles = StyleSheet.create({
         marginBottom: 8,
         fontSize: 16,
         paddingBottom: 24,
+        fontFamily: 'Gilroy-Medium',
     },
     blurView: {
         position: 'absolute',
@@ -188,6 +189,7 @@ const styles = StyleSheet.create({
         color: '#000000', // Couleur du texte du bouton
         textAlign: 'center', // Centre le texte
         fontSize: 16,
+        fontFamily: 'Gilroy-Medium',
     },
   container: {
     position: 'relative',
@@ -222,7 +224,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     zIndex: 10,
     overflow: 'hidden',
-    paddingHorizontal: 24,
+    paddingHorizontal: 30,
     marginTop: height * 0.02
   },
   blurContainer: {
@@ -245,9 +247,11 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 13,
     fontWeight: '600',
+    fontFamily: 'Gilroy-Medium',
   },
   activeCategoryText: {
     color: 'black',
+    fontFamily: 'Gilroy-Medium',
   },
   button: {
     borderRadius: 8,

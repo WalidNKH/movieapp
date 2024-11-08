@@ -25,10 +25,12 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 20,
         fontWeight: '500',
+        fontFamily: 'Gilroy-Medium',
     },
     seeMore: {
         fontSize: 14,
         fontWeight: '500',
+        fontFamily: 'Gilroy-Medium',
     }
 });
 

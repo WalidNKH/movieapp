@@ -212,8 +212,10 @@ console.log(searchMovies('batman'));
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
+    },
+    headerText: {
+        fontSize: 24,
+        fontFamily: 'Gilroy-Regular',
     },
     scrollViewContainer: {
         flexGrow: 1

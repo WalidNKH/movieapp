@@ -12,6 +12,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9431641E2CDE6B8800D55327 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9431641B2CDE6B8800D55327 /* Gilroy-Bold.ttf */; };
+		9431641F2CDE6B8800D55327 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9431641C2CDE6B8800D55327 /* Gilroy-Medium.ttf */; };
+		943164202CDE6B8800D55327 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9431641D2CDE6B8800D55327 /* Gilroy-Regular.ttf */; };
 		96DEADFE010F3723C7632D51 /* libPods-reactNative-reactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64D0E5BA1CDAAB5F206DA0 /* libPods-reactNative-reactNativeTests.a */; };
 		D9C028300333D175856B064F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2FCB0B7DF8B0DC8C7783E41A /* PrivacyInfo.xcprivacy */; };
 		E3F510379E2C3A529C148ED0 /* libPods-reactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D730E6D3FAD2E5FD5D7C9DAE /* libPods-reactNative.a */; };
@@ -44,6 +47,9 @@
 		7F64D0E5BA1CDAAB5F206DA0 /* libPods-reactNative-reactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNative-reactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80EB16B67636C2E28A822BC8 /* Pods-reactNative-reactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNative-reactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-reactNative-reactNativeTests/Pods-reactNative-reactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = reactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9431641B2CDE6B8800D55327 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-Bold.ttf"; path = "reactNative/Fonts/Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		9431641C2CDE6B8800D55327 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-Medium.ttf"; path = "reactNative/Fonts/Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		9431641D2CDE6B8800D55327 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-Regular.ttf"; path = "reactNative/Fonts/Gilroy-Regular.ttf"; sourceTree = "<group>"; };
 		946CE9CC2CA5A8650070BA8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D730E6D3FAD2E5FD5D7C9DAE /* libPods-reactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -123,6 +129,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				9431641B2CDE6B8800D55327 /* Gilroy-Bold.ttf */,
+				9431641C2CDE6B8800D55327 /* Gilroy-Medium.ttf */,
+				9431641D2CDE6B8800D55327 /* Gilroy-Regular.ttf */,
 				13B07FAE1A68108700A75B9A /* reactNative */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* reactNativeTests */,
@@ -252,8 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				943164202CDE6B8800D55327 /* Gilroy-Regular.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				9431641F2CDE6B8800D55327 /* Gilroy-Medium.ttf in Resources */,
 				D9C028300333D175856B064F /* PrivacyInfo.xcprivacy in Resources */,
+				9431641E2CDE6B8800D55327 /* Gilroy-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

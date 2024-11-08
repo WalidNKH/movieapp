@@ -49,8 +49,10 @@ const MovieCard = (props: any) => {
 const styles = StyleSheet.create({
     text:{
         fontSize: 14,
-        fontWeight: 500,
+        fontFamily: 'Gilroy-Regular',
+        paddingLeft: 8,
         flex: 1,
+        marginRight: 8,
     },
     container: {
         display: 'flex', 
@@ -83,9 +85,11 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         marginLeft: 4,
         fontSize: 12,
+        fontFamily: 'Gilroy-Regular',
     },
     voteCount: {
         fontSize: 12,
+        fontFamily: 'Gilroy-Regular',
     },
 });
 
