@@ -32,18 +32,19 @@ const AppContent = () => {
           }
           return <Icon name={iconName} size={size} color={color} />;
         },
+        
         tabBarActiveTintColor: theme.activeTab,
         tabBarInactiveTintColor: theme.text,
-        tabBarStyle: { backgroundColor: theme.background },
+        tabBarStyle: { backgroundColor: theme.background, borderTopColor: theme.background },
         headerStyle: { backgroundColor: theme.background },
         headerShown: false,
         safeAreaInsets: { bottom : 0, top: 0 }, 
       })}
     >
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Search" component={SearchScreen} />
-      <Tab.Screen name="Wishlist" component={WishlistScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+      <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+      <Tab.Screen name="Search" component={SearchScreen} options={{ headerShown: false }}/>
+      <Tab.Screen name="Wishlist" component={WishlistScreen} options={{ headerShown: false }}/>
+      <Tab.Screen name="Profile" component={ProfileScreen} options={{ headerShown: false }}/>
     </Tab.Navigator>
      </SafeAreaView>
   );
@@ -58,30 +59,4 @@ export default function App() {
     </ThemeProvider>
   );
 }
-
-// import React from 'react';
-// import { View, Text, StyleSheet } from 'react-native';
-
-// const App = () => (
-//   <View style={styles.container}>
-//     <Text style={styles.welcomeText}>Welcome to React Native!</Text>
-//   </View>
-// );
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     backgroundColor: '#F5FCFF',
-//   },
-//   welcomeText: {
-//     fontSize: 20,
-//     textAlign: 'center',
-//     margin: 10,
-//     color: 'blue',
-//   }
-// });
-
-// export default App;
 
